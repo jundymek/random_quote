@@ -1,0 +1,47 @@
+body {
+background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+background: linear-gradient(135deg,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+
+}
+
+html, body {
+    height: 100%;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+}
+blockquote {
+    font-family: "Audiowide";
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    border: 5px solid #ccc;
+    margin: 1.5em 100px;
+    padding: 2.5em 10px;
+}
+
+blockquote span.author {
+    float: right;
+    background: #f9f9f9;
+}
+
+blockquote span.author::before{
+    background: #f9f9f9;
+    content: "- ";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.34em;
+}
